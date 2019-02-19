@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var 1charactCount = true;
+    var charact1Count = true;
     var countDefending = 0;
     var obiCount = 0;
     var lukeCount = 0;
@@ -11,13 +11,13 @@ $(document).ready(function () {
 
     $('1charact').on('click', function() {
 
-        if(1charactCount ===true)
+        if(charact1Count ===true)
 
         {
             $(this).addClass('main');
             obiCount++;
 
-            1charactCount = false;
+            charact1Count = false;
 
 
         }
@@ -33,4 +33,3 @@ $(document).ready(function () {
 
 
 }
-
