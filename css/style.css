@@ -12,12 +12,16 @@
     width: 500px;
     height: 175px;
     margin: 15px 0 15px 0;
-    background-color: black;
 }
 
 .opponentsSection {
     width: 500px;
     height: 175px;
     margin: 15px 0 15px 0;
-    background-color: black;
+}
+
+.fightSection {
+    width: 500px;
+    height: 175px;
+    margin: 15px 0 15px 0;
 }

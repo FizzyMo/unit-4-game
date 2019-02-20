@@ -1,34 +1,75 @@
 $(document).ready(function () {
 
-    var charact1Count = true;
-    var countDefending = 0;
-    var obiCount = 0;
-    var lukeCount = 0;
-    var sidCOunt = 0;
-    var darmaulCount = 0;
+    let chara = {
+        'diana': {
+            name: 'diana',
+            health: 125,
+            attack: 17,
+            imageUrl: "assets/images/diana.jpg",
+            enemyDam: 5
+        },
 
-    $('.attBtn').off('click');
+        'leona': {
+            name: 'leona',
+            health: 175,
+            attack: 11,
+            imageUrl:"assets/images/leona.jpg",
+            enemyDam: 10
+        },
 
-    $('1charact').on('click', function() {
+        'teemo': {
+            name: 'teemo',
+            health: 100,
+            attack: 25,
+            imageUrl:"assets/images/teemo.jpg",
+            enemyDam: 12
+        },
 
-        if(charact1Count ===true)
+        'rumble': {
+            name: 'rumble',
+            health: 110,
+            attack: 20,
+            imageUrl: "assets/images/rumble.jpg",
+            enemyDam: 8
+        },
 
-        {
-            $(this).addClass('main');
-            obiCount++;
+        'thresh': {
+            name: 'thresh',
+            health: 200,
+            attack: 10,
+            imageUrl: "assets/images/thresh.jpg",
+            enemyDam: 9
+        },
 
-            charact1Count = false;
+        'pantheon': {
+            name: 'pantheon',
+            health: 70,
+            attack: 25,
+            imageUrl: "assets/images/pantheon.jpg",
+            enemyDam: 11
+        },
 
+        'vayne': {
+            name: 'vayne',
+            health: 90,
+            attack: 20,
+            imageUrl: "assets/images/vanye.jpg",
+            enemyDam: 7
+        },
 
+        'vladimir': {
+            name: 'vladimir',
+            health: 120,
+            attack: 18,
+            imageUrl: "assets/images/vladimir",
+            enemyDam: 5
         }
 
+    };
 
+    
 
-    }
-
-
-
-
+    
 
 
 
