@@ -1,0 +1,128 @@
+ 
+body {
+    background: url(../images/482106_kindred-wallpaper.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+img {
+    height: 100px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.section-title {
+    font-size: 300%;
+    padding-left: 33%;
+    color: gray;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.section-title-third {
+    font-size: 300%;
+    color: rgb(245, 10, 10);
+    font-family: 'Gochi Hand', cursive;
+}
+
+.main-section-title {
+    font-size: 420%;
+    text-align: center;
+    color: gray;
+    font-family: 'Gochi Hand', cursive;
+}
+
+.character {
+    display: inline-block;
+    border-style: solid;
+    border-width: 3px;
+    cursor: pointer;
+    background-color: rgb(252, 247, 247);
+    border-left-width: 25%;
+}
+
+.character-image {
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#character-area{
+    padding-left: 20%;
+}
+
+.character-name {
+    text-align: center;
+}
+
+#available-to-attack-section {
+    padding-left: 33%;
+}
+
+.character {
+    float: 33%;
+}
+
+.character-health {
+    text-align: center;
+}
+
+.enemy {
+    display: inline-block;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    cursor: pointer;
+    background-color:rgb(245, 10, 10);
+}
+
+.target-enemy {
+    background-color: black;
+    color: white;
+}
+
+#selected-character {
+    width: 190px;
+    height: 160px;
+    padding-left: 33%;
+}
+
+#attacker {
+    width: 190px;
+    height: 160px;
+
+}
+
+#fight-section {
+    padding-left: 33%;
+}
+
+#defender {
+    width: 190px;
+    height: 160px;
+    padding-left: 33%;
+}
+
+#defender-name {
+    text-align: center;
+}
+
+#defender-health {
+    text-align: center;
+}
+
+#choose-enemy-button {
+    visibility: hidden;
+}
+
+#restart-button {
+    visibility: hidden;
+}
+
+
+#turn-counter {
+    font-size: 150%;
+}

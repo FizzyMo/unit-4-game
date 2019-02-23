@@ -1,81 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RPG</title>
-    <!--Reset-->
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-
-    <!--CSS-->
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
-
-    <!--Bootstrap-->
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
+    <title>League Battle</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet"> 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 
 </head>
+<body>
+    <div class="main-section-title">Welcome to the League of Legends</div>
+    <div id="main-game-section">
 
-<body class="color">
-
-    <div class="container">
-        <!--Starts Characters-->
-        <div class="row">
-            <!--Shows List of Characters-->
-            <div class='charSection col-md-12'>Choose Your Fighter</div>
-
-
+        <div id="characters-section">
+            <div class="section-title">Available Characters</div>
+            <div id="character-area"></div>
         </div>
 
-        <div class="row">
+        <div id="selected-character-section">
+            <div class="section-title">Your Character</div>
 
-            <div class='opponentsSection col-md-12'>Choose Your Opponent</div>
-
+            <div id="selected-character"></div>
         </div>
 
-        <div class="row">
-            <div class='fightSection col-md-12'>DEFENSE</div>
-            <button class='attackBtn col-md-4'>ATTACK!</button>
-            <div class="defenderSection col-md-4"></div>
-            
-
-
+        <div id="available-to-attack-section">
+            <div class="section-title-third">Enemies Available To Attack</div>
         </div>
+        <div class="section-title">Fight Section</div>
+        <div id="fight-section">
+            <button id="attack-button">Attack</button>
+        </div>
+        <div id="action">
+            <div class="character-section">
+                <div class="section-title">Defender</div>
 
-
-
+                <div id="defender"></div>
+            </div>
+        </div>
     </div>
 
-
-
-<script type="text/javascript">
-
-    $(document).ready(function()  {
-
-
-    });
-
-</script>
-
-    <!--JQuery-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <div id="game-message"></div>
+    <button id="reset-button" style="display: none;">Reset Game</button>
 </body>
 
 
+
+
+
 </html>
+
